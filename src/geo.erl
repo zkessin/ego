@@ -16,5 +16,5 @@ haversine({Lat, Lng}, {Lat_, Lng_}) ->
 
 
 dist({Lat, Lng}, {Lat_, Lng_}) ->
-    Dist = haversine({PictLat, PictLon},
-                     {Lat , Lon}) * ?REarth * 2.
+    haversine({Lat_, Lng_},
+              {Lat , Lng}) * ?REarth * 2.
